@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MalAware · Voyez l’attaque, comprenez la défense</title>
+  <meta name="description" content="Trois simulations interactives et sans risque pour comprendre comment un trojan, un keylogger et un ransomware piègent leurs victimes, et comment s’en protéger.">
+  <link rel="stylesheet" href="style/main.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true">
+  <symbol id="i-trojan" viewBox="0 0 64 64"><path d="M22 46l2-9c-6-1-10-5-9-10l9-8c1-6 6-10 12-10l-1-5 6 4c7 3 9 13 7 23l-2 15z"/><path d="M40 13c3 4 4 9 3 15"/><rect x="12" y="46" width="40" height="7" rx="1.5"/><circle cx="21" cy="57.5" r="3.5"/><circle cx="43" cy="57.5" r="3.5"/><circle cx="30" cy="17" r="1.4" fill="currentColor"/></symbol>
+  <symbol id="i-keylogger" viewBox="0 0 64 64"><rect x="5" y="17" width="54" height="32" rx="5"/><path d="M13 26h3M21 26h3M29 26h3M37 26h3M45 26h3M13 33h3M21 33h3M29 33h3M37 33h3M45 33h3M20 41h24"/></symbol>
+  <symbol id="i-ransomware" viewBox="0 0 64 64"><rect x="13" y="28" width="38" height="29" rx="5"/><path d="M20 28v-7a12 12 0 0124 0v7"/><circle cx="32" cy="40" r="3.5"/><path d="M32 43.5V49"/></symbol>
+  <symbol id="i-oeil" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-bouclier" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-h">
+  <div class="w">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5l10.5 4v7.8c0 6.6-4.4 11.3-10.5 13.2C9.9 26.6 5.5 21.9 5.5 15.3V7.5z"/><path class="logo-s" d="M10.5 15.5h11"/></svg><span>MalAware</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="index.html#catalogue">Simulations</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<p class="warn" role="note"><span class="w">Simulation pédagogique : aucune action réelle n’est faite sur votre machine, aucun code malveillant n’est exécuté.</span></p>
+
+<main id="main">
+  <!-- Accueil -->
+  <section class="hero">
+    <div class="w hero-in">
+      <div class="hero-txt">
+        <p class="kicker rv">Prévention · 3 simulations · Aucun risque</p>
+        <h1 class="hero-t">
+          <span class="l" style="--i:0"><span>Voyez</span></span>
+          <span class="l" style="--i:1"><span>l’attaque.</span></span>
+          <span class="l l-b" style="--i:2"><span>Comprenez</span></span>
+          <span class="l l-b" style="--i:3"><span>la défense.</span></span>
+        </h1>
+        <p class="lead rv" style="--i:4">Un trojan, un keylogger, un ransomware. Pour chacun, une simulation où vous faites les choix de la victime en voyant ce que voit l’attaquant, puis une fiche claire pour retenir les bons réflexes.</p>
+        <div class="cta rv" style="--i:5">
+          <a class="btn" href="#catalogue">Lancer une simulation <svg class="ic"><use href="#i-fleche"/></svg></a>
+          <a class="btn s" href="apropos.html">Notre démarche</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="plate" data-m="trojan" style="--i:0"><span class="plate-k">01 · Trojan</span><svg class="ic"><use href="#i-trojan"/></svg><span class="plate-f">Accès à distance</span></div>
+        <div class="plate" data-m="keylogger" style="--i:1"><span class="plate-k">02 · Keylogger</span><svg class="ic"><use href="#i-keylogger"/></svg><span class="plate-f">Espionnage</span></div>
+        <div class="plate" data-m="ransomware" style="--i:2"><span class="plate-k">03 · Ransomware</span><svg class="ic"><use href="#i-ransomware"/></svg><span class="plate-f">Extorsion</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau des bons réflexes -->
+  <div class="ticker" aria-hidden="true">
+    <div class="tk">
+      <span>Vérifiez l’adresse de l’expéditeur</span>
+      <span>N’activez jamais les macros</span>
+      <span>Sauvegardez hors ligne</span>
+      <span>Téléchargez sur le site officiel</span>
+      <span>Activez la double authentification</span>
+      <span>Ne payez pas la rançon</span>
+      <span>Ne donnez jamais un code reçu par SMS</span>
+    </div>
+  </div>
+
+  <!-- Catalogue -->
+  <section class="sec w" id="catalogue">
+    <header class="sec-h rv">
+      <p class="sec-n">01</p>
+      <h2>Les simulations</h2>
+      <p class="sec-d">Trois malwares parmi les plus répandus. Choisissez-en un : c’est vous qui décidez de chaque clic.</p>
+    </header>
+    <div class="cards">
+      <a class="mcard rv" data-m="trojan" style="--i:0" href="trojan.html#demo">
+        <span class="mc-n">01</span>
+        <svg class="ic mc-ico"><use href="#i-trojan"/></svg>
+        <span class="mc-fam">Accès à distance</span>
+        <h3>Trojan</h3>
+        <p>Un faux programme utile qui ouvre en secret une porte à l’attaquant.</p>
+        <span class="mc-go">Lancer la simulation <svg class="ic"><use href="#i-fleche"/></svg></span>
+      </a>
+      <a class="mcard rv" data-m="keylogger" style="--i:1" href="keylogger.html#demo">
+        <span class="mc-n">02</span>
+        <svg class="ic mc-ico"><use href="#i-keylogger"/></svg>
+        <span class="mc-fam">Espionnage</span>
+        <h3>Keylogger</h3>
+        <p>Un espion qui enregistre chaque touche que vous tapez, mots de passe compris.</p>
+        <span class="mc-go">Lancer la simulation <svg class="ic"><use href="#i-fleche"/></svg></span>
+      </a>
+      <a class="mcard rv" data-m="ransomware" style="--i:2" href="ransomware.html#demo">
+        <span class="mc-n">03</span>
+        <svg class="ic mc-ico"><use href="#i-ransomware"/></svg>
+        <span class="mc-fam">Extorsion</span>
+        <h3>Ransomware</h3>
+        <p>Un rançongiciel qui verrouille vos fichiers et réclame de l’argent.</p>
+        <span class="mc-go">Lancer la simulation <svg class="ic"><use href="#i-fleche"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Fonctionnement -->
+  <section class="sec w">
+    <header class="sec-h rv">
+      <p class="sec-n">02</p>
+      <h2>Comment ça marche</h2>
+      <p class="sec-d">Quelques minutes par simulation, sans rien installer.</p>
+    </header>
+    <ol class="how">
+      <li class="rv" style="--i:0"><span class="how-n">1</span><h3>Choisissez une menace</h3><p>Trojan, keylogger ou ransomware : chaque simulation raconte une situation du quotidien.</p></li>
+      <li class="rv" style="--i:1"><span class="how-n">2</span><h3>Faites vos choix</h3><p>À gauche votre écran, à droite celui de l’attaquant. Cliquez, tapez, décidez : l’issue dépend de vous.</p></li>
+      <li class="rv" style="--i:2"><span class="how-n">3</span><h3>Retenez les réflexes</h3><p>Le bilan explique ce qui s’est passé, les indices à repérer et quoi faire si cela vous arrive.</p></li>
+    </ol>
+  </section>
+
+  <!-- Deux publics -->
+  <section class="sec w">
+    <header class="sec-h rv">
+      <p class="sec-n">03</p>
+      <h2>Deux façons de jouer</h2>
+      <p class="sec-d">Selon que vous voulez comprendre l’attaque ou apprendre à l’éviter.</p>
+    </header>
+    <div class="duo">
+      <article class="duo-c curieux rv" style="--i:0">
+        <svg class="ic duo-ico"><use href="#i-oeil"/></svg>
+        <p class="duo-k">Vous êtes curieux</p>
+        <h3>Laissez-vous piéger</h3>
+        <p>Cliquez là où il ne faut pas : vous verrez l’attaque de l’intérieur, ce que l’attaquant voit et fait, et le journal technique de chaque étape.</p>
+      </article>
+      <article class="duo-c prudent rv" style="--i:1">
+        <svg class="ic duo-ico"><use href="#i-bouclier"/></svg>
+        <p class="duo-k">Vous êtes prudent</p>
+        <h3>Déjouez le piège</h3>
+        <p>Activez les indices : les signes suspects s’affichent à l’écran. Repérez-les, faites les bons choix, et repartez avec les réflexes qui protègent.</p>
+      </article>
+    </div>
+    <p class="note rv">Tout se passe dans votre navigateur : aucun fichier touché, aucune connexion, aucune donnée collectée.</p>
+  </section>
+</main>
+
+<footer class="site-f">
+  <div class="w">
+    <p class="f-giant" aria-hidden="true">MalAware</p>
+    <div class="f-row">
+      <p><b>Important :</b> les simulations reproduisent uniquement des comportements fictifs. Aucun code malveillant réel n’est exécuté ni fourni, et aucune donnée n’est collectée.</p>
+      <nav aria-label="Pied de page"><a href="index.html#catalogue">Simulations</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <p class="f-small">Projet de groupe · BTS SIO</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

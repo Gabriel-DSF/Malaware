@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keylogger · MalAware</title>
+  <meta name="description" content="Simulation interactive d’un keylogger : voyez, touche par touche, ce qu’un espion enregistre quand vous tapez un mot de passe.">
+  <link rel="stylesheet" href="style/main.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true">
+  <symbol id="i-keylogger" viewBox="0 0 64 64"><rect x="5" y="17" width="54" height="32" rx="5"/><path d="M13 26h3M21 26h3M29 26h3M37 26h3M45 26h3M13 33h3M21 33h3M29 33h3M37 33h3M45 33h3M20 41h24"/></symbol>
+  <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-h">
+  <div class="w">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5l10.5 4v7.8c0 6.6-4.4 11.3-10.5 13.2C9.9 26.6 5.5 21.9 5.5 15.3V7.5z"/><path class="logo-s" d="M10.5 15.5h11"/></svg><span>MalAware</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#catalogue" aria-current="page">Simulations</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<p class="warn" role="note"><span class="w">Simulation pédagogique : aucune action réelle n’est faite sur votre machine, aucun code malveillant n’est exécuté.</span></p>
+
+<main id="main" data-m="keylogger">
+  <section class="phead w">
+    <div class="phead-in">
+      <div>
+        <p class="crumb rv"><a href="index.html#catalogue">Simulations</a> / 02</p>
+        <h1 class="phead-t"><span class="l"><span>Keylogger</span></span></h1>
+        <p class="lead rv" style="--i:2">Un enregistreur de frappes : il note tout ce que vous tapez, y compris vos mots de passe.</p>
+      </div>
+      <svg class="ic phead-ico rv" style="--i:1" aria-hidden="true"><use href="#i-keylogger"/></svg>
+    </div>
+    <dl class="meta rv" style="--i:3">
+      <div><dt>Famille</dt><dd>Espionnage</dd></div>
+      <div><dt>Arrive par</dt><dd>Un programme piégé ou une clé USB</dd></div>
+      <div><dt>Durée</dt><dd>3 minutes environ</dd></div>
+    </dl>
+  </section>
+
+  <section class="sec w" id="demo">
+    <header class="sec-h rv">
+      <p class="sec-n">01</p>
+      <h2>La simulation</h2>
+      <p class="sec-d">Un espion est caché sur votre ordinateur. Connectez-vous à une banque fictive et voyez ce qu’il enregistre. Ce que vous tapez reste dans cette page.</p>
+    </header>
+    <div class="sim rv" data-sim="keylogger"><noscript><p>Activez JavaScript pour lancer la simulation.</p></noscript></div>
+  </section>
+
+  <section class="sec w" id="info">
+    <header class="sec-h rv">
+      <p class="sec-n">02</p>
+      <h2>La fiche</h2>
+      <p class="sec-d">L’essentiel à retenir sur les keyloggers.</p>
+    </header>
+    <div class="fiche">
+      <article class="fi rv" style="--i:0"><p class="fi-k">A · Comment il arrive</p><h3>Vecteur</h3><p>Souvent installé par un faux logiciel ou un trojan, une pièce jointe piégée, ou un petit boîtier branché entre le clavier et l’ordinateur.</p></article>
+      <article class="fi rv" style="--i:1"><p class="fi-k">B · Comment il agit</p><h3>Mécanisme</h3><p>Le module écoute le clavier en arrière-plan, range les touches dans un journal, puis l’envoie à l’attaquant.</p></article>
+      <article class="fi impact rv" style="--i:2"><p class="fi-k">C · Ce qu’il provoque</p><h3>Impact</h3><p>Vol de mots de passe, de données bancaires et de messages privés, parfois sans aucun signe visible.</p></article>
+      <article class="fi protection rv" style="--i:3"><p class="fi-k">D · Comment s’en protéger</p><h3>Protection</h3><p>Antivirus à jour, mises à jour système, double authentification (un mot de passe volé ne suffit plus), ne jamais brancher un périphérique inconnu.</p></article>
+    </div>
+  </section>
+
+  <section class="sec w">
+    <header class="sec-h rv">
+      <p class="sec-n">03</p>
+      <h2>Sources</h2>
+    </header>
+    <ul class="sources rv">
+      <li><b>Cybermalveillance.gouv.fr</b> Fiches sur les logiciels espions <span>cybermalveillance.gouv.fr</span></li>
+      <li><b>ANSSI</b> Bonnes pratiques <span>cyber.gouv.fr</span></li>
+    </ul>
+  </section>
+
+  <nav class="suite w rv" aria-label="Simulation suivante">
+    <a href="ransomware.html#demo"><span><small>Simulation suivante</small><b>Ransomware</b></span><svg class="ic" aria-hidden="true"><use href="#i-fleche"/></svg></a>
+  </nav>
+</main>
+
+<footer class="site-f">
+  <div class="w">
+    <p class="f-giant" aria-hidden="true">MalAware</p>
+    <div class="f-row">
+      <p><b>Important :</b> les simulations reproduisent uniquement des comportements fictifs. Aucun code malveillant réel n’est exécuté ni fourni, et aucune donnée n’est collectée.</p>
+      <nav aria-label="Pied de page"><a href="index.html#catalogue">Simulations</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <p class="f-small">Projet de groupe · BTS SIO</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/sim-keylogger.js"></script>
+</body>
+</html>

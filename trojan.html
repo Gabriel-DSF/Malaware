@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trojan · MalAware</title>
+  <meta name="description" content="Simulation interactive d’un cheval de Troie : un faux logiciel gratuit ouvre une porte dérobée à l’attaquant.">
+  <link rel="stylesheet" href="style/main.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true">
+  <symbol id="i-trojan" viewBox="0 0 64 64"><path d="M22 46l2-9c-6-1-10-5-9-10l9-8c1-6 6-10 12-10l-1-5 6 4c7 3 9 13 7 23l-2 15z"/><path d="M40 13c3 4 4 9 3 15"/><rect x="12" y="46" width="40" height="7" rx="1.5"/><circle cx="21" cy="57.5" r="3.5"/><circle cx="43" cy="57.5" r="3.5"/><circle cx="30" cy="17" r="1.4" fill="currentColor"/></symbol>
+  <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-h">
+  <div class="w">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3.5l10.5 4v7.8c0 6.6-4.4 11.3-10.5 13.2C9.9 26.6 5.5 21.9 5.5 15.3V7.5z"/><path class="logo-s" d="M10.5 15.5h11"/></svg><span>MalAware</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#catalogue" aria-current="page">Simulations</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<p class="warn" role="note"><span class="w">Simulation pédagogique : aucune action réelle n’est faite sur votre machine, aucun code malveillant n’est exécuté.</span></p>
+
+<main id="main" data-m="trojan">
+  <section class="phead w">
+    <div class="phead-in">
+      <div>
+        <p class="crumb rv"><a href="index.html#catalogue">Simulations</a> / 01</p>
+        <h1 class="phead-t"><span class="l"><span>Trojan</span></span></h1>
+        <p class="lead rv" style="--i:2">Un cheval de Troie : un programme qui paraît utile, mais cache une partie malveillante.</p>
+      </div>
+      <svg class="ic phead-ico rv" style="--i:1" aria-hidden="true"><use href="#i-trojan"/></svg>
+    </div>
+    <dl class="meta rv" style="--i:3">
+      <div><dt>Famille</dt><dd>Accès à distance</dd></div>
+      <div><dt>Arrive par</dt><dd>Un faux logiciel gratuit</dd></div>
+      <div><dt>Durée</dt><dd>3 minutes environ</dd></div>
+    </dl>
+  </section>
+
+  <section class="sec w" id="demo">
+    <header class="sec-h rv">
+      <p class="sec-n">01</p>
+      <h2>La simulation</h2>
+      <p class="sec-d">Vous devez ouvrir un PDF et cherchez un logiciel sur Internet. Curieux ? Laissez-vous piéger. Prudent ? Activez <b>Indices</b> pour repérer les pièges.</p>
+    </header>
+    <div class="sim rv" data-sim="trojan"><noscript><p>Activez JavaScript pour lancer la simulation.</p></noscript></div>
+  </section>
+
+  <section class="sec w" id="info">
+    <header class="sec-h rv">
+      <p class="sec-n">02</p>
+      <h2>La fiche</h2>
+      <p class="sec-d">L’essentiel à retenir sur les chevaux de Troie.</p>
+    </header>
+    <div class="fiche">
+      <article class="fi rv" style="--i:0"><p class="fi-k">A · Comment il arrive</p><h3>Vecteur</h3><p>Logiciel « gratuit » téléchargé sur un site non officiel, pièce jointe d’un faux courriel, fausse mise à jour.</p></article>
+      <article class="fi rv" style="--i:1"><p class="fi-k">B · Comment il agit</p><h3>Mécanisme</h3><p>Le programme fait ce qu’il promet, pendant qu’une partie cachée ouvre une porte dérobée vers un serveur de l’attaquant, qui peut ensuite envoyer des ordres.</p></article>
+      <article class="fi impact rv" style="--i:2"><p class="fi-k">C · Ce qu’il provoque</p><h3>Impact</h3><p>Prise de contrôle à distance, vol de données, installation d’autres malwares (comme un ransomware).</p></article>
+      <article class="fi protection rv" style="--i:3"><p class="fi-k">D · Comment s’en protéger</p><h3>Protection</h3><p>Télécharger uniquement depuis les sites officiels, vérifier la source, garder système et antivirus à jour, ne pas travailler avec un compte administrateur.</p></article>
+    </div>
+  </section>
+
+  <section class="sec w">
+    <header class="sec-h rv">
+      <p class="sec-n">03</p>
+      <h2>Sources</h2>
+    </header>
+    <ul class="sources rv">
+      <li><b>Cybermalveillance.gouv.fr</b> Menaces et bonnes pratiques <span>cybermalveillance.gouv.fr</span></li>
+      <li><b>ANSSI</b> Guides d’hygiène informatique <span>cyber.gouv.fr</span></li>
+    </ul>
+  </section>
+
+  <nav class="suite w rv" aria-label="Simulation suivante">
+    <a href="keylogger.html#demo"><span><small>Simulation suivante</small><b>Keylogger</b></span><svg class="ic" aria-hidden="true"><use href="#i-fleche"/></svg></a>
+  </nav>
+</main>
+
+<footer class="site-f">
+  <div class="w">
+    <p class="f-giant" aria-hidden="true">MalAware</p>
+    <div class="f-row">
+      <p><b>Important :</b> les simulations reproduisent uniquement des comportements fictifs. Aucun code malveillant réel n’est exécuté ni fourni, et aucune donnée n’est collectée.</p>
+      <nav aria-label="Pied de page"><a href="index.html#catalogue">Simulations</a><a href="apropos.html">À propos</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <p class="f-small">Projet de groupe · BTS SIO</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/sim-trojan.js"></script>
+</body>
+</html>

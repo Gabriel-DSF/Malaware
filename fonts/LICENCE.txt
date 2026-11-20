@@ -1,0 +1,9 @@
+Polices hébergées avec le site (aucun appel à un service externe) :
+
+- Archivo          titres et texte
+- JetBrains Mono   étiquettes techniques
+
+Les deux sont distribuées sous licence SIL Open Font License 1.1 (OFL),
+qui autorise leur utilisation et leur intégration dans un site web.
+Texte de la licence : https://openfontlicense.org
+Fichiers obtenus via Fontsource (https://fontsource.org), versions « variables ».
